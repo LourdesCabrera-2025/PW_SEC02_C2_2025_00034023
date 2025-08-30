@@ -113,6 +113,50 @@ body {
     transition: all 0.3s ease;
 }
 
+.wrap-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 3.5em ;
+}
+
+.option {
+    margin: 2em ;
+    width: 11.8em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #253C5E;
+    color: #f2f2f2;
+    font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.option-1:hover {
+    background-color:#3F618C ;
+    transition: all 0.3s ease;
+}
+
+.option-2:hover {
+    background-color:#3F618C ;
+    transition: all 0.3s ease;
+}
+
+.option-3:hover {
+    background-color:#3F618C ;
+    transition: all 0.3s ease;
+}
+.option-4:hover {
+    background-color:#3F618C ;
+    transition: all 0.3s ease;
+}
+.option-5:hover {
+    background-color:#3F618C ;
+    transition: all 0.3s ease;
+}
+
 .wrap-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
