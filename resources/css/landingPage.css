@@ -3,13 +3,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #c6c6c6b2;
+    background-color: #e9e7e7d2;
 }
 
 
 
 #wrap>.navbar {
-    background-color: #1A1840;
+    background-color: #108c2d;
     font-family: 'Permanent Marker';
     font-weight: 300;
     font-style: normal;
@@ -29,9 +29,17 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
+.navbar-brand.change-title {
+    margin-left: 1.2em;
+    text-decoration: none;
+    font-family: 'Permanent Marker';
+    font-size: 25pt;
+    color: #f2f2f2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
 
 .navbar-brand:hover {
-    color: red;
+    color: #A4D65E;
 }
 
 .container-fluid {
@@ -55,7 +63,7 @@ body {
     text-decoration: none;
     font-family: 'Permanent Marker';
     font-size: 15pt;
-    color: #ff6666;
+    color: #bdb8b8;
     pointer-events: none;
 }
 
@@ -92,7 +100,7 @@ body {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: #ff0000;
+    background-color: #e2d810;
     transition: width 0.3s ease-in-out;
 
 }
@@ -105,8 +113,8 @@ body {
 }
 
 .nav-link-item:hover {
-    background-color: #221f52;
-    color: #BF4024;
+    background-color: #07651d9c;
+    color: #e2d810;
     font-weight: 200;
     padding: 0.2em 0.5em;
     border-radius: 0.5em;
@@ -117,16 +125,16 @@ body {
     display: flex;
     justify-content: center;
     gap: 1em;
-    margin-top: 3.5em ;
+    margin-top: 3.5em;
 }
 
 .option {
-    margin: 2em ;
+    margin: 2em;
     width: 11.8em;
     height: 2.5em;
     border-radius: 0.5em;
     border: none;
-    background-color: #253C5E;
+    background-color: #07651d9c;
     color: #f2f2f2;
     font-family: "Playwrite NG Modern", cursive;
     font-optical-sizing: auto;
@@ -135,25 +143,27 @@ body {
 }
 
 .option-1:hover {
-    background-color:#3F618C ;
+    background-color: #108c2d;
     transition: all 0.3s ease;
 }
 
 .option-2:hover {
-    background-color:#3F618C ;
+    background-color: #108c2d;
     transition: all 0.3s ease;
 }
 
 .option-3:hover {
-    background-color:#3F618C ;
+    background-color: #108c2d;
     transition: all 0.3s ease;
 }
+
 .option-4:hover {
-    background-color:#3F618C ;
+    background-color: #108c2d;
     transition: all 0.3s ease;
 }
+
 .option-5:hover {
-    background-color:#3F618C ;
+    background-color: #108c2d;
     transition: all 0.3s ease;
 }
 
@@ -170,13 +180,14 @@ body {
 
     background-color: #f2f2f2;
     border-radius: 1em;
-    box-shadow: 0 0.5em 1.5em rgba(0,0,0,0.1);
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 70%; 
+    max-width: 300px;
     margin: 5em;
-   
+
 
 }
+
 .card-img-top {
     display: block;
     margin: 0 auto;
@@ -196,4 +207,81 @@ body {
 .card-text {
     font-size: 0.95rem;
     color: #555;
+}
+
+.card-text.allBoxes {
+    font-size: 0.95rem;
+    color: #555;
+}
+/* Modificación de rows*/
+
+.wrap-cards.single-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1em;
+    width: 50%;
+    padding: 1em;
+    margin: 0 auto;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* todo alineado a la izquierda */
+    gap: 1em;
+    padding: 1em 0;
+    margin-left: 1.5em; /* margen desde el borde izquierdo */
+}
+
+/* Marca interactiva */
+.footer-brand {
+    text-decoration: none;
+    font-family: 'Permanent Marker';
+    font-size: 15pt;
+    color: #f2f2f2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-brand:hover {
+    color: #E6E6FA;
+    transform: scale(1.05);
+}
+
+/* Logo animado */
+.footer-logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 0; 
+    cursor: pointer;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0.5em 1em rgba(255, 255, 255, 0.3);
+}
+
+/* Texto */
+.footer-text {
+    font-size: 0.95rem;
+    color: #a0e7e5;
+    transition: color 0.3s ease;
+}
+
+
+/* Footer general */
+.footer {
+    background: linear-gradient(135deg, #049DD9, #05C7F2);
+    color: #f2f2f2;
+    padding: 2em 1.5em;
+    box-shadow: 0 -0.3em 1em rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer:hover {
+    transform: translateY(-3px);
+    box-shadow:  0 -0.5em 1.5em rgba(0, 0, 0, 0.5);
 }
