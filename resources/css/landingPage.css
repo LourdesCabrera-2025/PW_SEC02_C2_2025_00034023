@@ -107,11 +107,28 @@ body {
     color: #BF4024;
     font-weight: 200;
     padding: 0.2em 0.5em;
-    border-radius: 5px ;
+    border-radius: 5px;
     transition: all 0.3s ease;
 }
 
-.container-wrapper {
+.wrap-cards {
     background-color: chartreuse;
-    margin-top: 5em;
+    margin: 5em;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 100px 100px;
+    height: 100%;
+    align-items: center;
+
+
+}
+
+.card {
+    width: 18rem;
+    margin-top: 7em;
+    margin-left: 4.5em;
+    padding: 0.2em 0.5em;
+    background-color: aliceblue;
+    border-radius: 5px;
+
 }
